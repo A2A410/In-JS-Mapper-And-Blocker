@@ -99,3 +99,16 @@
     window.blockJSByNumber = blockJSByNumber;
     window.blockJSByNumbers = blockJSByNumbers;
 })();
+
+// Some reason occur and the usage and js loaded doesnt show so i add this
+
+function showJSList() {
+    const current = localStorage.getItem('jsBlocker_mappedList_' + location.hostname);
+    if (!current) {
+        console.log('[JS Mapper] No JS list found for this domain.');
+        return;
+    }
+    const list = JSON.parse(current);
+    console.log(`Website: ${location.hostname}`);
+    list.forEach((url, i) => console.log(`[${i + 1}] ${url}`));
+}
