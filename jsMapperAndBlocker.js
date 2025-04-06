@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         JS Mapper & Blocker (Domain-Specific + Auto Log)
 // @namespace    custom-js-tracker
-// @version      1.4
+// @version      1.5
 // @description  Map and block JS files per site. Logs auto-blocked scripts. Persistent per domain.
 // @match        *://*/*
 // @grant        none
